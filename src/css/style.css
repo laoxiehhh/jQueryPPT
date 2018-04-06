@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+html, body, .wrapper, .slider-list{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    position: relative;
+}
+.slider-list .slider{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 200px;
+}
+.slider-list .slider:nth-of-type(1){
+    background-image: url('../img/bg-1.jpg');
+}
+.slider-list .slider:nth-of-type(2){
+    display: none;
+    background-image: url('../img/bg-2.jpg');
+}
+.slider-list .slider:nth-of-type(3){
+    display: none;
+    background-image: url('../img/bg-3.jpg');
+}
+.slider-list .slider .title{
+    width: 40%;
+    float: left;
+}
+.slider-list .slider .title p{
+    font-size: 16px;
+}
+.slider-list .slider:nth-of-type(1) .title p{
+    font-size: 20px;
+}
+.slider-list .slider .image{
+    width: 0%;
+    float: right;
+}
+.slider-list .slider:nth-of-type(1) .image{
+    width: 40%;
+    float: right;
+}
+.slider-list .slider .image img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+.btn span{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.btn .btnLeft{
+    margin-left: 100px;
+    float: left;
+    background-image: url('../img/left-btn.png');
+}
+.btn .btnRight{
+    margin-right: 100px;
+    float: right;
+    background-image: url('../img/right-btn.png');
+}
+.order-list{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 150px;
+    text-align: center;
+}
+.order-list ul{
+    display: inline-block;
+    height: 20px;
+}
+.order-list ul li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #555;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.order-list ul li:nth-of-type(3){
+    margin-right: 0px;
+}
+.order-list ul li.active{
+    background-color: #fff;
+}
